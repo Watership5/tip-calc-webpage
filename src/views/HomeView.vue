@@ -56,7 +56,7 @@
   let state = ref(true)
   let state2 = ref(true)
   let state3 = ref(true)
-  const setTipValue = (value, index) => {
+  const setTipValue = (value:any, index:any) => {
     tip.value = value;
     clickedIndex.value = index
   };
@@ -75,7 +75,7 @@
   const err = ref()
   const err2 = ref()
   const err3 = ref()
-  const validation = (index) => {
+  const validation = (index:any) => {
     if(index == 1){
       if(bill.value == null || bill.value.trim() === ""){
         err.value = "invalid 3"
